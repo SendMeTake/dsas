@@ -1,5 +1,3 @@
-# meta developer: @SendMeTake
-
 import re
 from .. import loader
 import logging
@@ -8,7 +6,7 @@ logger = logging.getLogger(name)
 
 @loader.tds
 class yg_actxrocketModule(loader.Module):
-    """Активатор для чеков @xrocket которые отправляют как ссылку"""
+    """Активатор для чеков @xrocket которые отправляют как ссылку от @SendMeTake"""
     strings = {
         "name": "yg_actxrocketBot",
     }
