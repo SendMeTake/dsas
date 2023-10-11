@@ -19,7 +19,7 @@ class yg_actxrocketModule(loader.Module):
 
     async def watcher(self, message):
         if message.raw_text and 'https://t.me/xrocket?start=' in message.raw_text:
-            urls = re.findall(r'https://t.me/xrocket\?start=([A-Za-z0-9]+)', message.raw_text)
+            urls = re.findall(r'https://t.me/xrocket?start=([A-Za-z0-9]+)', message.raw_text)
             for code in urls:
                 command = f'/start {code}'
                 await message.client.send_message('xrocket', command)
